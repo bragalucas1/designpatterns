@@ -3,42 +3,44 @@ package fig.interfaces;
 import java.awt.Color;
 
 /**
- * Fábrica abstrata para criação de figuras geométricas.
+ * Fï¿½brica abstrata para criaï¿½ï¿½o de figuras geomï¿½tricas.
  * @author Vladimir Oliveira Di Iorio
  */
 public interface FigFactoryInterface {
 
 	/**
-	 * Método para criação de listas de figuras.
+	 * Mï¿½todo para criaï¿½ï¿½o de listas de figuras.
 	 * @return Lista criada.
 	 */
 	FigListInterface createFigList();
 	
 	/**
-	 * Método para criação de círculos.
-	 * @param posX Posição horizontal.
-	 * @param posY Posição vertical.
+	 * Mï¿½todo para criaï¿½ï¿½o de cï¿½rculos.
+	 * @param posX Posiï¿½ï¿½o horizontal.
+	 * @param posY Posiï¿½ï¿½o vertical.
 	 * @param color Cor da borda.
-	 * @param radius Raio do círculo.
-	 * @return Círculo criado.
+	 * @param radius Raio do cï¿½rculo.
+	 * @return Cï¿½rculo criado.
 	 */
 	CircleInterface createCircle(
 			int posX, int posY, Color color, int radius);
 	
 	/**
-	 * Método para criação de retângulos.
-	 * @param posX Posição horizontal.
-	 * @param posY Posição vertical.
+	 * Mï¿½todo para criaï¿½ï¿½o de retï¿½ngulos.
+	 * @param posX Posiï¿½ï¿½o horizontal.
+	 * @param posY Posiï¿½ï¿½o vertical.
 	 * @param color Cor da borda.
 	 * @param width Largura.
 	 * @param height Altura.
-	 * @return Retângulo criado.
+	 * @return Retï¿½ngulo criado.
 	 */
 	RectangleInterface createRectangle(
 			int posX, int posY, Color color, int width, int height);
 	
+	LineInterface createLine(int posX, int posY, Color color, int posX2, int posY2);
+	
 	/**
-	 * Método para criação de figuras compostas.
+	 * Mï¿½todo para criaï¿½ï¿½o de figuras compostas.
 	 * @return Figura composta criada.
 	 */
 	CompositeInterface createComposite();

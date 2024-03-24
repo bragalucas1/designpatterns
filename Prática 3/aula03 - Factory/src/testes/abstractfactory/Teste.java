@@ -10,7 +10,7 @@ public class Teste {
 	
 	public static void main(String args[]) {
 		Teste t1 = new Teste();
-		t1.g = new InterfaceGrafica(new FigDrawableFactory_FEIA());
+		t1.g = new InterfaceGrafica(new FigDrawableFactory(new FigFactory()));
 	}
 	
 }

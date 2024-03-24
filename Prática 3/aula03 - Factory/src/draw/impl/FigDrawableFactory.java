@@ -6,10 +6,11 @@ import fig.interfaces.CircleInterface;
 import fig.interfaces.CompositeInterface;
 import fig.interfaces.FigFactoryInterface;
 import fig.interfaces.FigListInterface;
+import fig.interfaces.LineInterface;
 import fig.interfaces.RectangleInterface;
 
 /**
- * Fábrica concreta para criação de figuras,
+ * Fï¿½brica concreta para criaï¿½ï¿½o de figuras,
  * instanciando objetos com as classes do pacote draw.impl.
  * @author  Vladimir Oliveira Di Iorio
  */
@@ -17,13 +18,13 @@ public class FigDrawableFactory
 implements FigFactoryInterface {
 
 	/**
-	 * Referência para uma fábrica abstrata auxiliar.
+	 * Referï¿½ncia para uma fï¿½brica abstrata auxiliar.
 	 */
 	private fig.interfaces.FigFactoryInterface factory;
 
 	/**
-	 * Constrói fábrica recebendo outra fábrica.
-	 * @param factory Fábrica auxiliar.
+	 * Constrï¿½i fï¿½brica recebendo outra fï¿½brica.
+	 * @param factory Fï¿½brica auxiliar.
 	 */
 	public FigDrawableFactory(fig.interfaces.FigFactoryInterface factory) {
 		this.factory = factory;
@@ -50,6 +51,12 @@ implements FigFactoryInterface {
 	public RectangleInterface createRectangle(
 			int posX, int posY, Color color, int width, int height) {
 		return new RectangleDrawable(factory.createRectangle(posX, posY, color, width, height));
+		
+	}
+	
+	public LineInterface createLine(
+			int posX, int posY, Color color, int posX2, int posY2) {
+		return new LineDrawable(factory.createLine(posX, posY, color, posX2, posY2));
 		
 	}
 

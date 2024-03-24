@@ -5,6 +5,7 @@ import exibicao.Exibidor;
 import fig.interfaces.CircleInterface;
 import fig.interfaces.CompositeInterface;
 import fig.interfaces.FigListInterface;
+import fig.interfaces.LineInterface;
 import fig.interfaces.RectangleInterface;
 
 import java.awt.Color;
@@ -14,7 +15,7 @@ import java.awt.event.WindowEvent;
 import javax.swing.JFrame;
 
 /**
- * Classe abstrata que aplica o padrão de projeto Factory Method.
+ * Classe abstrata que aplica o padrï¿½o de projeto Factory Method.
  * @author  Vladimir Oliveira Di Iorio
  */
 public abstract class InterfaceGrafica extends JFrame {
@@ -30,7 +31,7 @@ public abstract class InterfaceGrafica extends JFrame {
 	Exibidor exibidor;
 
 	/**
-	 * Construtor, sem parâmetros.
+	 * Construtor, sem parï¿½metros.
 	 */
 	public InterfaceGrafica() {
 		super("Teste");
@@ -49,44 +50,57 @@ public abstract class InterfaceGrafica extends JFrame {
 	}
 
 	/**
-	 * Método abstrato para criação de listas de figuras.
+	 * Mï¿½todo abstrato para criaï¿½ï¿½o de listas de figuras.
 	 * @return Lista criada.
 	 */
 	public abstract FigListInterface createFigList();
 	
 	/**
-	 * Método abstrato para criação de retângulos.
-	 * @param posX Posição horizontal.
-	 * @param posY Posição vertical.
+	 * Mï¿½todo abstrato para criaï¿½ï¿½o de retï¿½ngulos.
+	 * @param posX Posiï¿½ï¿½o horizontal.
+	 * @param posY Posiï¿½ï¿½o vertical.
 	 * @param color Cor da borda.
 	 * @param width Largura.
 	 * @param height Altura.
-	 * @return Retângulo criado.
+	 * @return Retï¿½ngulo criado.
 	 */
 	public abstract RectangleInterface createRectangle(
 			int posX, int posY, Color color, int width, int height);
 	
 	/**
-	 * Método abstrato para criação de círculos.
-	 * @param posX Posição horizontal.
-	 * @param posY Posição vertical.
+	 * Mï¿½todo abstrato para criaï¿½ï¿½o de linha.
+	 * @param posX Posiï¿½ï¿½o horizontal.
+	 * @param posY Posiï¿½ï¿½o vertical.
+	 * @param color Cor da linha.
+	 * @param posX2.
+	 * @param posY2.
+	 * @return Linha criada.
+	 */
+	
+	public abstract LineInterface createLine(
+			int posX, int posY, Color color, int posX2, int posY2);
+	
+	/**
+	 * Mï¿½todo abstrato para criaï¿½ï¿½o de cï¿½rculos.
+	 * @param posX Posiï¿½ï¿½o horizontal.
+	 * @param posY Posiï¿½ï¿½o vertical.
 	 * @param color Cor da borda.
-	 * @param radius Raio do círculo.
-	 * @return Círculo criado.
+	 * @param radius Raio do cï¿½rculo.
+	 * @return Cï¿½rculo criado.
 	 */
 	public abstract CircleInterface createCircle(
 			int posX, int posY, Color color, int radius);
 	
 	/**
-	 * Método abstrato para criação de figuras compostas.
+	 * Mï¿½todo abstrato para criaï¿½ï¿½o de figuras compostas.
 	 * @return Figura composta criada.
 	 */
 	public abstract CompositeInterface createComposite();
 	
 	/**
-	 * Constrói uma lista de figuras.
-	 * OBS: UTILIZA MÉTODOS FÁBRICA (ABSTRATOS).
-	 * @return Lista de figuras construída.
+	 * Constrï¿½i uma lista de figuras.
+	 * OBS: UTILIZA Mï¿½TODOS Fï¿½BRICA (ABSTRATOS).
+	 * @return Lista de figuras construï¿½da.
 	 */
 	private FigListInterface constroiDados() {
 		FigListInterface figs = createFigList();
@@ -97,6 +111,7 @@ public abstract class InterfaceGrafica extends JFrame {
 		c.addFig(createRectangle(180, 60, Color.BLACK, 50, 30));
 		figs.addFig(c);
 		figs.addFig(createRectangle(30, 110, Color.MAGENTA, 50, 30));
+		figs.addFig(createLine(5, 20, Color.GREEN, 20, 20));
 		return figs;
 	}
 

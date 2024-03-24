@@ -14,9 +14,9 @@ import java.awt.event.WindowEvent;
 import javax.swing.JFrame;
 
 /**
- * Classe que simula um subsistema onde figuras geométricas
- * são instanciadas, sem utilizar classes concretas.
- * Para isso, o padrão Abstract Factory é aplicado.
+ * Classe que simula um subsistema onde figuras geomï¿½tricas
+ * sï¿½o instanciadas, sem utilizar classes concretas.
+ * Para isso, o padrï¿½o Abstract Factory ï¿½ aplicado.
  * @author  Vladimir Oliveira Di Iorio
  */
 public class InterfaceGrafica extends JFrame {
@@ -27,7 +27,7 @@ public class InterfaceGrafica extends JFrame {
 	private FigListInterface figDoc;
 
 	/**
-	 * Fábrica usada para construir figuras.
+	 * Fï¿½brica usada para construir figuras.
 	 */
 	FigFactoryInterface factory;
 		
@@ -37,8 +37,8 @@ public class InterfaceGrafica extends JFrame {
 	private Exibidor exibidor;
 
 	/**
-	 * Constrói objeto recebendo fábrica abstrata.
-	 * @param factory Fábrica abstrata para construir formas geométricas.
+	 * Constrï¿½i objeto recebendo fï¿½brica abstrata.
+	 * @param factory Fï¿½brica abstrata para construir formas geomï¿½tricas.
 	 */
 	public InterfaceGrafica(FigFactoryInterface factory) {
 		super("Teste");
@@ -58,9 +58,9 @@ public class InterfaceGrafica extends JFrame {
 	}
 
 	/**
-	 * Constrói uma lista de figuras.
-	 * OBS: UTILIZA A FÁBRICA ABSTRATA.
-	 * @return Lista de figuras construída.
+	 * Constrï¿½i uma lista de figuras.
+	 * OBS: UTILIZA A Fï¿½BRICA ABSTRATA.
+	 * @return Lista de figuras construï¿½da.
 	 */
 	private FigListInterface constroiDados() {
 		FigListInterface figs = factory.createFigList();
@@ -71,6 +71,7 @@ public class InterfaceGrafica extends JFrame {
 		c.addFig(factory.createRectangle(180, 60, Color.BLACK, 50, 30));
 		figs.addFig(c);
 		figs.addFig(factory.createRectangle(30, 110, Color.MAGENTA, 50, 30));
+		figs.addFig(factory.createLine(150, 30, Color.GREEN, 20, 20));
 		return figs;
 	}
 

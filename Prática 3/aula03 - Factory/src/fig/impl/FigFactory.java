@@ -6,10 +6,11 @@ import fig.interfaces.CircleInterface;
 import fig.interfaces.CompositeInterface;
 import fig.interfaces.FigFactoryInterface;
 import fig.interfaces.FigListInterface;
+import fig.interfaces.LineInterface;
 import fig.interfaces.RectangleInterface;
 
 /**
- * Fábrica concreta para criação de figuras,
+ * Fï¿½brica concreta para criaï¿½ï¿½o de figuras,
  * instanciando objetos com as classes do
  * pacote fig.impl.
  * @author Vladimir Oliveira Di Iorio
@@ -40,6 +41,9 @@ public class FigFactory implements FigFactoryInterface {
 		
 	}
 	
+	public LineInterface createLine(int posX, int posY, Color color, int posX2, int posY2) {
+		return new Line(posX, posY, color, posX2, posY2);
+	}
 	/**
 	 * @see fig.interfaces.FigFactoryInterface#createComposite()
 	 */

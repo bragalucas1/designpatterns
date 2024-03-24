@@ -10,7 +10,7 @@ import fig.interfaces.LineInterface;
 import fig.interfaces.RectangleInterface;
 
 /**
- * Fábrica concreta para criação de figuras,
+ * Fï¿½brica concreta para criaï¿½ï¿½o de figuras,
  * instanciando objetos com as classes do pacote draw.impl.
  * @author  Vladimir Oliveira Di Iorio
  */
@@ -40,6 +40,14 @@ implements FigFactoryInterface {
 		return new RectangleDrawable(new fig.impl.Rectangle(posX, posY, color, width, height));
 		
 	}
+	
+	public LineInterface createLine(
+			int posX, int posY, Color color, int posX2, int posY2) {
+		return new LineDrawable(new fig.impl.Line(posX, posY, color, posX2, posY2));
+		
+	}
+	
+	
 
 	/**
 	 * @see fig.interfaces.FigFactoryInterface#createComposite()
