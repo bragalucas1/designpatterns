@@ -1,0 +1,24 @@
+package atividade3.impl;
+import java.util.Stack;
+
+import atividade3.interfaces.TreeIterator;
+import atividade3.interfaces.TreeInterface;
+
+public class PreOrderIt implements TreeIterator {
+	private TreeInterface tree;
+	private Stack<TreeInterface> cursor;
+	
+	public PreOrderIt(TreeInterface tree) {
+		this.tree = tree;
+		cursor = new Stack<TreeInterface>();
+	}
+
+	public boolean hasNext() {
+		return false;
+	}
+
+	public TreeInterface next() {
+		return null;
+	}
+
+}

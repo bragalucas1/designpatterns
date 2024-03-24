@@ -1,0 +1,29 @@
+package atividade2;
+import java.util.Iterator;
+import java.util.List;
+
+public class ItFunctions {
+	
+	static int findMax(Iterable<Integer> list) {
+		Iterator<Integer> it = list.iterator();
+		int maxValue = Integer.MIN_VALUE;
+		while(it.hasNext()) {
+			int currentIterable = it.next();
+			if(currentIterable > maxValue) {
+				maxValue = currentIterable;
+			}
+		}
+		return maxValue;
+	}
+	
+	static <E> int numOccurences(Iterable<E> list, E e) {
+		return 0;
+	}
+	
+	static boolean isNonDecreasing(List<Integer> list) {
+		return true;
+	}
+
+
+
+}

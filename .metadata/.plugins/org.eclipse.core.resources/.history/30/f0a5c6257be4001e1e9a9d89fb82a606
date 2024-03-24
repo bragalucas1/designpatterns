@@ -1,0 +1,21 @@
+package atividade2;
+import java.util.Iterator;
+import java.util.List;
+
+public class ItFunctions {
+	
+	static int findMax(Iterable<Integer> list) {
+		return 0;
+	}
+	
+	static <E> int numOccurences(Iterable<E> list, E e) {
+		return 0;
+	}
+	
+	static boolean isNonDecreasing(List<Integer> list) {
+		return true;
+	}
+
+
+
+}

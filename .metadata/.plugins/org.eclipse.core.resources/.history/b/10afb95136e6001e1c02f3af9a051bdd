@@ -1,0 +1,49 @@
+package atividade2;
+import java.util.Iterator;
+import java.util.List;
+
+public class ItFunctions {
+	//Iteradores fornecem uma vida para acessar os elementos de um conjunto sequencialmente sem expor sua implementação em si.
+	//Simplificam a interface do Agregado, permitindo que mais de um caminhamento seja realizado simultaneamente.
+	//Sua criação e manutenção pode trazer um custo adicional em termos de memória e tempo.
+	
+	
+	static int findMax(Iterable<Integer> list) {
+		Iterator<Integer> it = list.iterator();
+		int maxValue = Integer.MIN_VALUE;
+		while(it.hasNext()) {
+			int currentIterable = it.next();
+			if(currentIterable > maxValue) {
+				maxValue = currentIterable;
+			}
+		}
+		return maxValue;
+	}
+	
+	static <E> int numOccurences(Iterable<E> list, E e) {
+		Iterator<E> it = list.iterator();
+		int counter = 0;
+		while(it.hasNext()) {
+			E currentValue = it.next();
+			if(currentValue == e) {
+				counter++;
+			}
+		}
+		return counter;
+	}
+	
+	static boolean isNonDecreasing(List<Integer> list) {
+		Iterator<Integer> it = list.iterator();
+		
+		if (!it.hasNext()) {
+            return true; // Lista vazia é considerada não decrescente
+        }
+		int previous = it.next(); //pegamos o primeiro elemento aqui
+		while(it.hasNext()) {
+			int currentValue = it.next();
+			if(currentValue < previous) return false;
+			previous = currentValue;
+		}
+		return true;
+	}
+}
