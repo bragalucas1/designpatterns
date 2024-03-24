@@ -1,0 +1,2 @@
+This is a repository to store the content from class INF 442 - Padrões de Projeto(Design Patterns). In this class, we study about the principals patterns, such as: Iterator, Singleton, Factory Method, Observer, Abstract Factory, Builder, Adapter, Decorator, Command and Visitor.
+A software design patern is a general, reusable solution to commonly occurring problem within a given context in software design. It is a formalization of best practices that the programmer can use to solve common problemns when designing an application or system.
