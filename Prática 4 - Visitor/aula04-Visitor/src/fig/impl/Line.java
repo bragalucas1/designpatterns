@@ -36,7 +36,8 @@ public class Line extends FigPosColor implements LineInterface {
 	}
 	
 	public void accept(VisitorInterface visitor) {
-		// insert code here...
+		visitor.visit(this);
 	}
-
+	
+	
 }

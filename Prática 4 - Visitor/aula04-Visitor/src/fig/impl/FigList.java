@@ -10,37 +10,41 @@ import fig.interfaces.VisitorInterface;
 
 /**
  * Classe concreta para representar lista de figuras.
+ * 
  * @author Vladimir Oliveira Di Iorio
  */
-public class FigList
-implements FigListInterface {
-	
+public class FigList implements FigListInterface {
+
 	/**
 	 * Lista que armazena as figuras.
 	 */
 	private List<FigInterface> list;
-	
+
 	/**
-	 * Construtor, sem parâmetros.
+	 * Construtor, sem parï¿½metros.
 	 */
 	public FigList() {
 		list = new ArrayList<FigInterface>();
 	}
-	
+
 	/**
 	 * @see FigListInterface#addFig(FigInterface)
 	 */
-	public void addFig(FigInterface fig) { list.add(fig); }
-	
+	public void addFig(FigInterface fig) {
+		list.add(fig);
+	}
+
 	/**
 	 * @see java.lang.Iterable#iterator()
 	 */
 	public Iterator<FigInterface> iterator() {
 		return list.iterator();
 	}
-	
+
 	public void accept(VisitorInterface visitor) {
-		visitor.visit(this);
+		for (FigInterface fig : list) {
+			fig.accept(visitor);
+		}
 	}
 
 }
