@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<FigDoc xmlns ="http://www.dpi.ufv.br/fig">
+<figList>
+	<Line>
+		<posX>0</posX>
+		<posY>0</posY>
+		<color>0000FF</color>
+		<posX2>200</posX2>
+		<posY2>200</posY2>
+	</Line>
+	<Circle>
+		<posX>80</posX>
+		<posY>80</posY>
+		<color>00FF00</color>
+		<radius>40</radius>
+	</Circle>
+	<Rectangle>
+		<posX>20</posX>
+		<posY>20</posY>
+		<color>FF0000</color>
+		<width>70</width>
+		<height>40</height>
+	</Rectangle>
+	<Rectangle>
+		<posX>30</posX>
+		<posY>30</posY>
+		<color>0000FF</color>
+		<width>40</width>
+		<height>60</height>
+	</Rectangle>
+	<Composite>
+		<figList>
+			<Circle>
+				<posX>180</posX>
+				<posY>90</posY>
+				<color>FF0000</color>
+				<radius>30</radius>
+			</Circle>
+			<Circle>
+				<posX>230</posX>
+				<posY>180</posY>
+				<color>FF0000</color>
+				<radius>100</radius>
+			</Circle>			
+			<Composite>
+				<figList>
+					<Circle>
+						<posX>290</posX>
+						<posY>140</posY>
+						<color>00FF00</color>
+						<radius>45</radius>
+					</Circle>
+					<Rectangle>
+						<posX>320</posX>
+						<posY>160</posY>
+						<color>0000FF</color>
+						<width>40</width>
+						<height>60</height>
+					</Rectangle>
+				</figList>
+			</Composite>
+		</figList>
+	</Composite>
+</figList>
+</FigDoc>
