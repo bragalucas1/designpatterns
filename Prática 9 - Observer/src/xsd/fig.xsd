@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.dpi.ufv.br/fig"
+xmlns ="http://www.dpi.ufv.br/fig"
+ elementFormDefault="qualified"
+>
+
+
+<xsd:element name="FigDoc">
+  <xsd:complexType>
+  <xsd:sequence>
+    <xsd:element ref="figList"/>
+  </xsd:sequence>
+  </xsd:complexType>
+</xsd:element>
+
+
+<xsd:element name="figElement" type="FigType" abstract="true" />
+<xsd:complexType name="FigType" abstract="true" />
+
+
+<xsd:element name="figList" type="FigListType" />
+<xsd:complexType name="FigListType">
+  <xsd:sequence>
+    <xsd:element ref="figElement" minOccurs="1" maxOccurs="unbounded"/>
+  </xsd:sequence>
+</xsd:complexType>
+
+
+<xsd:element name="Composite" type="CompositeType" substitutionGroup="figElement"/>
+<xsd:complexType name="CompositeType">
+  <xsd:complexContent>
+    <xsd:extension base="FigType">
+      <xsd:sequence>
+        <xsd:element ref="figList" minOccurs="0"/>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+
+
+<xsd:complexType name="FigPosColorType">
+  <xsd:complexContent>
+    <xsd:extension base="FigType">
+      <xsd:sequence>
+	    <xsd:element name="posX" type="xsd:int" />
+	    <xsd:element name="posY" type="xsd:int" />
+        <xsd:element name="color" type="xsd:string" />
+      </xsd:sequence>
+    </xsd:extension>
+   </xsd:complexContent>
+</xsd:complexType>
+
+
+<xsd:element name="Circle" type="CircleType" substitutionGroup="figElement" />
+<xsd:complexType name="CircleType">
+  <xsd:complexContent>
+    <xsd:extension base="FigPosColorType">
+      <xsd:sequence>
+        <xsd:element name="radius" type="xsd:int"/>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+
+
+<xsd:element name="Rectangle" type="RectangleType" substitutionGroup="figElement" />
+<xsd:complexType name="RectangleType" >
+  <xsd:complexContent>
+    <xsd:extension base="FigPosColorType">
+      <xsd:sequence>
+        <xsd:element name="width" type="xsd:int"/>
+        <xsd:element name="height" type="xsd:int"/>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+
+
+<xsd:element name="Line" type="LineType" substitutionGroup="figElement" />
+<xsd:complexType name="LineType" >
+  <xsd:complexContent>
+    <xsd:extension base="FigPosColorType">
+      <xsd:sequence>
+        <xsd:element name="posX2" type="xsd:int"/>
+        <xsd:element name="posY2" type="xsd:int"/>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+
+
+</xsd:schema>

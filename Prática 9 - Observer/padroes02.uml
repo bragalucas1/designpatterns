@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:JavaProfile_1="http:///_aZXakH6MEdmbwasWWc4yvw.profile.uml2" xmlns:Omondo_1="http:///_zrN_0SUoEdmNXYQzyImvfA.profile.uml2" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xsi:schemaLocation="http:///_aZXakH6MEdmbwasWWc4yvw.profile.uml2 platform:/plugin/com.omondo.uml.core/profiles/Java.profile.uml#_aZhLlH6MEdmbwasWWc4yvw http:///_zrN_0SUoEdmNXYQzyImvfA.profile.uml2 platform:/plugin/com.omondo.uml.core/profiles/Omondo.profile.uml#_zrN_1iUoEdmNXYQzyImvfA">
+  <uml:Model xmi:id="_Jd0pwI82Ed2bucG14DOY8g" name="padroes02">
+    <eAnnotations xmi:id="_ISEIkI_3Ed2IrLlWt8D3oQ" source="D:/Vladimir/disciplinas/inf640/2008/prog/padroes02/src/fig/builder/pattern/fig.builder.pattern.ucd" references="_IR-B8I_3Ed2IrLlWt8D3oQ _LJoLkI_3Ed2IrLlWt8D3oQ _LjgEII_3Ed2IrLlWt8D3oQ _LjsRYI_3Ed2IrLlWt8D3oQ _Lj-lQI_3Ed2IrLlWt8D3oQ _LkLZkI_3Ed2IrLlWt8D3oQ _LmRrUI_3Ed2IrLlWt8D3oQ _Ln_iko_3Ed2IrLlWt8D3oQ _LoFpMI_3Ed2IrLlWt8D3oQ _LoFpMY_3Ed2IrLlWt8D3oQ _LoLv0I_3Ed2IrLlWt8D3oQ _LoR2cI_3Ed2IrLlWt8D3oQ _LoR2cY_3Ed2IrLlWt8D3oQ _LoR2co_3Ed2IrLlWt8D3oQ _LoX9EI_3Ed2IrLlWt8D3oQ _L3jokI_3Ed2IrLlWt8D3oQ _FGK1AJPAEd2WZsFFDBcVOQ _HL-q8JPAEd2WZsFFDBcVOQ _FHBwoJPAEd2WZsFFDBcVOQ"/>
+    <eAnnotations xmi:id="_LoLv04_3Ed2IrLlWt8D3oQ" source="General" references="_LoLv0o_3Ed2IrLlWt8D3oQ _L3dh8o_3Ed2IrLlWt8D3oQ _F-ztMJPAEd2WZsFFDBcVOQ"/>
+    <eAnnotations xmi:id="_Yz90oI_3Ed2IrLlWt8D3oQ" source="D:/Vladimir/disciplinas/inf640/2008/prog/padroes02/src/fig/xmlclasses/fig.xmlclasses.ucd" references="_LoLv0I_3Ed2IrLlWt8D3oQ _LoR2cY_3Ed2IrLlWt8D3oQ _Yz90oY_3Ed2IrLlWt8D3oQ _LoFpMY_3Ed2IrLlWt8D3oQ _LoX9EI_3Ed2IrLlWt8D3oQ _Y0QIgI_3Ed2IrLlWt8D3oQ _LkLZkI_3Ed2IrLlWt8D3oQ _LjsRYI_3Ed2IrLlWt8D3oQ"/>
+    <eAnnotations xmi:id="_5dhW4JO_Ed2WZsFFDBcVOQ" references="_5EsAIJO_Ed2WZsFFDBcVOQ _L3jokI_3Ed2IrLlWt8D3oQ _E1vzYZPAEd2WZsFFDBcVOQ _E116AJPAEd2WZsFFDBcVOQ _E2OUgJPAEd2WZsFFDBcVOQ _E2ahwJPAEd2WZsFFDBcVOQ _E2s1oJPAEd2WZsFFDBcVOQ _E3FQIJPAEd2WZsFFDBcVOQ _E32FIJPAEd2WZsFFDBcVOQ _E7SasJPAEd2WZsFFDBcVOQ _E7en8JPAEd2WZsFFDBcVOQ _E79JEJPAEd2WZsFFDBcVOQ _E79JEZPAEd2WZsFFDBcVOQ _E8DPsJPAEd2WZsFFDBcVOQ _E8JWUJPAEd2WZsFFDBcVOQ _E8t-EJPAEd2WZsFFDBcVOQ _E80EsJPAEd2WZsFFDBcVOQ _E86LUJPAEd2WZsFFDBcVOQ _E86LUZPAEd2WZsFFDBcVOQ _E9AR8JPAEd2WZsFFDBcVOQ _E9GYkJPAEd2WZsFFDBcVOQ _E-PoEJPAEd2WZsFFDBcVOQ _E-PoEZPAEd2WZsFFDBcVOQ _E_9fUJPAEd2WZsFFDBcVOQ _FAo0wJPAEd2WZsFFDBcVOQ _FAo0wZPAEd2WZsFFDBcVOQ _FBZpwJPAEd2WZsFFDBcVOQ _FBl3AJPAEd2WZsFFDBcVOQ _FB4K4JPAEd2WZsFFDBcVOQ _FCQlYJPAEd2WZsFFDBcVOQ _FCi5QJPAEd2WZsFFDBcVOQ _FDTuQJPAEd2WZsFFDBcVOQ _FEKp4JPAEd2WZsFFDBcVOQ _FEc9wJPAEd2WZsFFDBcVOQ _FEc9wZPAEd2WZsFFDBcVOQ _FE1YQJPAEd2WZsFFDBcVOQ _FE7e4JPAEd2WZsFFDBcVOQ _FFBlgJPAEd2WZsFFDBcVOQ _FFHsIJPAEd2WZsFFDBcVOQ _FFHsIZPAEd2WZsFFDBcVOQ _FFNywJPAEd2WZsFFDBcVOQ _FFaAAJPAEd2WZsFFDBcVOQ _FF4hIJPAEd2WZsFFDBcVOQ _FF-nwJPAEd2WZsFFDBcVOQ _FGK1AJPAEd2WZsFFDBcVOQ _FHBwoJPAEd2WZsFFDBcVOQ _FHUrkJPAEd2WZsFFDBcVOQ _FHayMJPAEd2WZsFFDBcVOQ _FI2VkJPAEd2WZsFFDBcVOQ _FJCi0JPAEd2WZsFFDBcVOQ _FJOwEJPAEd2WZsFFDBcVOQ _FKFrsJPAEd2WZsFFDBcVOQ _FKFrsZPAEd2WZsFFDBcVOQ _Lj-lQI_3Ed2IrLlWt8D3oQ _FXvtMJPAEd2WZsFFDBcVOQ _F9kXEJPAEd2WZsFFDBcVOQ _F9kXEZPAEd2WZsFFDBcVOQ _F-I-0pPAEd2WZsFFDBcVOQ _F-VMEJPAEd2WZsFFDBcVOQ _F-VMEZPAEd2WZsFFDBcVOQ _F-bSsJPAEd2WZsFFDBcVOQ _F-bSsZPAEd2WZsFFDBcVOQ _F-hZUJPAEd2WZsFFDBcVOQ _F-nf8JPAEd2WZsFFDBcVOQ _F-nf8ZPAEd2WZsFFDBcVOQ _F-tmkJPAEd2WZsFFDBcVOQ _F-tmkZPAEd2WZsFFDBcVOQ _F-ztMZPAEd2WZsFFDBcVOQ _F-ztMpPAEd2WZsFFDBcVOQ _F-5z0pPAEd2WZsFFDBcVOQ _F-_6cJPAEd2WZsFFDBcVOQ _F_GBEJPAEd2WZsFFDBcVOQ"/>
+    <packageImport xmi:id="_JqbiYI82Ed2bucG14DOY8g">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_H8xOAI_3Ed2IrLlWt8D3oQ" name="fig">
+      <packagedElement xmi:type="uml:Package" xmi:id="_IR37UI_3Ed2IrLlWt8D3oQ" name="builder">
+        <packagedElement xmi:type="uml:Package" xmi:id="_IR-B8I_3Ed2IrLlWt8D3oQ" name="pattern">
+          <packagedElement xmi:type="uml:Class" xmi:id="_LJoLkI_3Ed2IrLlWt8D3oQ" name="FigDirector" clientDependency="_LoX9EY_3Ed2IrLlWt8D3oQ _LpbF8Y_3Ed2IrLlWt8D3oQ _LqYIMo_3Ed2IrLlWt8D3oQ _Lrb4IY_3Ed2IrLlWt8D3oQ _LsAf4I_3Ed2IrLlWt8D3oQ _Ls3bgo_3Ed2IrLlWt8D3oQ _LtV8oY_3Ed2IrLlWt8D3oQ _Lt6kYo_3Ed2IrLlWt8D3oQ _LuZFgY_3Ed2IrLlWt8D3oQ _Lu3moo_3Ed2IrLlWt8D3oQ _LvcOYY_3Ed2IrLlWt8D3oQ _Lv6vgo_3Ed2IrLlWt8D3oQ _LwfXQY_3Ed2IrLlWt8D3oQ _Lw94Yo_3Ed2IrLlWt8D3oQ _LxjHMI_3Ed2IrLlWt8D3oQ _LygJcY_3Ed2IrLlWt8D3oQ _Ly-qkY_3Ed2IrLlWt8D3oQ _LzjSUo_3Ed2IrLlWt8D3oQ _L0Bzco_3Ed2IrLlWt8D3oQ _L0mbMY_3Ed2IrLlWt8D3oQ _L1E8Uo_3Ed2IrLlWt8D3oQ">
+            <ownedAttribute xmi:id="_LjZ9gI_3Ed2IrLlWt8D3oQ" name="figDoc" visibility="private" type="_LjsRYI_3Ed2IrLlWt8D3oQ" association="_LmRrUI_3Ed2IrLlWt8D3oQ">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LlIb0Y_3Ed2IrLlWt8D3oQ" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LlIb0I_3Ed2IrLlWt8D3oQ"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_LjyYAI_3Ed2IrLlWt8D3oQ" name="construct" visibility="private" concurrency="concurrent">
+              <ownedParameter xmi:id="_LkFS8I_3Ed2IrLlWt8D3oQ" name="builder" type="_Lj-lQI_3Ed2IrLlWt8D3oQ"/>
+              <ownedParameter xmi:id="_LkRgMI_3Ed2IrLlWt8D3oQ" name="figList" type="_LkLZkI_3Ed2IrLlWt8D3oQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Lkp6sI_3Ed2IrLlWt8D3oQ" name="construct" visibility="public" concurrency="concurrent">
+              <ownedParameter xmi:id="_Lkp6sY_3Ed2IrLlWt8D3oQ" name="builder" type="_Lj-lQI_3Ed2IrLlWt8D3oQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Lkp6so_3Ed2IrLlWt8D3oQ" name="FigDirector" visibility="public" concurrency="concurrent">
+              <ownedParameter xmi:id="_LkwBUI_3Ed2IrLlWt8D3oQ" name="figDoc" type="_LjsRYI_3Ed2IrLlWt8D3oQ"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_Lj-lQI_3Ed2IrLlWt8D3oQ" name="FigBuilderInterface" clientDependency="_L4O-AI_3Ed2IrLlWt8D3oQ">
+            <ownedOperation xmi:id="_L3XbUI_3Ed2IrLlWt8D3oQ" name="buildRectangle" visibility="public" isAbstract="true" concurrency="concurrent">
+              <ownedParameter xmi:id="_JOhxgJPAEd2WZsFFDBcVOQ" name="posX">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_JOhxgZPAEd2WZsFFDBcVOQ" name="posY">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_JOn4IJPAEd2WZsFFDBcVOQ" name="color" type="_L3jokI_3Ed2IrLlWt8D3oQ"/>
+              <ownedParameter xmi:id="_JOn4IZPAEd2WZsFFDBcVOQ" name="width">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_JOn4IpPAEd2WZsFFDBcVOQ" name="height">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_L3pvMY_3Ed2IrLlWt8D3oQ" name="endComposite" visibility="public" isAbstract="true" concurrency="concurrent"/>
+            <ownedOperation xmi:id="_L38DEI_3Ed2IrLlWt8D3oQ" name="initDoc" visibility="public" isAbstract="true" concurrency="concurrent"/>
+            <ownedOperation xmi:id="_L38DEY_3Ed2IrLlWt8D3oQ" name="buildCircle" visibility="public" isAbstract="true" concurrency="concurrent">
+              <ownedParameter xmi:id="_JOt-wJPAEd2WZsFFDBcVOQ" name="posX">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_JOt-wZPAEd2WZsFFDBcVOQ" name="posY">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_JOt-wpPAEd2WZsFFDBcVOQ" name="color" type="_L3jokI_3Ed2IrLlWt8D3oQ"/>
+              <ownedParameter xmi:id="_JOt-w5PAEd2WZsFFDBcVOQ" name="radius">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_L4CwxI_3Ed2IrLlWt8D3oQ" name="endDoc" visibility="public" isAbstract="true" concurrency="concurrent"/>
+            <ownedOperation xmi:id="_L4I3YI_3Ed2IrLlWt8D3oQ" name="initComposite" visibility="public" isAbstract="true" concurrency="concurrent"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_LmRrUI_3Ed2IrLlWt8D3oQ" memberEnd="_LjZ9gI_3Ed2IrLlWt8D3oQ _LmXx8I_3Ed2IrLlWt8D3oQ">
+            <name xsi:nil="true"/>
+            <ownedEnd xmi:id="_LmXx8I_3Ed2IrLlWt8D3oQ" name="" type="_LJoLkI_3Ed2IrLlWt8D3oQ" association="_LmRrUI_3Ed2IrLlWt8D3oQ">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LmXx8Y_3Ed2IrLlWt8D3oQ" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LmXx8o_3Ed2IrLlWt8D3oQ"/>
+            </ownedEnd>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_E_9fUJPAEd2WZsFFDBcVOQ" name="FigXMLDirector" clientDependency="_Fpm5QJPAEd2WZsFFDBcVOQ _FqqCIZPAEd2WZsFFDBcVOQ _FrIjQpPAEd2WZsFFDBcVOQ _FseAApPAEd2WZsFFDBcVOQ _FtIuYZPAEd2WZsFFDBcVOQ _FtnPgpPAEd2WZsFFDBcVOQ _FuL3QZPAEd2WZsFFDBcVOQ _FuqYYpPAEd2WZsFFDBcVOQ _Fv6VkpPAEd2WZsFFDBcVOQ _FxPyUpPAEd2WZsFFDBcVOQ _FxuTcZPAEd2WZsFFDBcVOQ _FzDwMpPAEd2WZsFFDBcVOQ _F03uEJPAEd2WZsFFDBcVOQ _F1WPMZPAEd2WZsFFDBcVOQ _F2sTApPAEd2WZsFFDBcVOQ _F3EtgZPAEd2WZsFFDBcVOQ _F3jOoZPAEd2WZsFFDBcVOQ _F4aKQpPAEd2WZsFFDBcVOQ _F6B64pPAEd2WZsFFDBcVOQ _F6gcAZPAEd2WZsFFDBcVOQ _F7vyIpPAEd2WZsFFDBcVOQ _QjjeUJPAEd2WZsFFDBcVOQ _Qj740ZPAEd2WZsFFDBcVOQ _Qlv2spPAEd2WZsFFDBcVOQ _QmIRMZPAEd2WZsFFDBcVOQ _QmmyUZPAEd2WZsFFDBcVOQ _QneVApPAEd2WZsFFDBcVOQ _QozxwpPAEd2WZsFFDBcVOQ _QpSS4ZPAEd2WZsFFDBcVOQ _QrAKIZPAEd2WZsFFDBcVOQ _Qv4DEJPAEd2WZsFFDBcVOQ _QwWkMZPAEd2WZsFFDBcVOQ _Qwu-sZPAEd2WZsFFDBcVOQ _QxNf0pPAEd2WZsFFDBcVOQ _Qxl6UpPAEd2WZsFFDBcVOQ _QyKiEZPAEd2WZsFFDBcVOQ _Qyi8kZPAEd2WZsFFDBcVOQ _QzBdsZPAEd2WZsFFDBcVOQ _QzySspPAEd2WZsFFDBcVOQ _Q0Qz0ZPAEd2WZsFFDBcVOQ _Q0pOUpPAEd2WZsFFDBcVOQ _Q1aqYpPAEd2WZsFFDBcVOQ _Q1zE4ZPAEd2WZsFFDBcVOQ _Q2RmAZPAEd2WZsFFDBcVOQ _Q2qAgpPAEd2WZsFFDBcVOQ _Q3IhopPAEd2WZsFFDBcVOQ _Q3nCwZPAEd2WZsFFDBcVOQ _Q3_dQpPAEd2WZsFFDBcVOQ">
+            <ownedAttribute xmi:id="_FWyq8JPAEd2WZsFFDBcVOQ" name="figDoc" visibility="private" type="_FHBwoJPAEd2WZsFFDBcVOQ" association="_FXvtMJPAEd2WZsFFDBcVOQ">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FXE-0ZPAEd2WZsFFDBcVOQ" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FXE-0JPAEd2WZsFFDBcVOQ"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_FWyq8ZPAEd2WZsFFDBcVOQ" name="construct" visibility="private" concurrency="concurrent">
+              <ownedParameter xmi:id="_QvlvMZPAEd2WZsFFDBcVOQ" name="builder" type="_Lj-lQI_3Ed2IrLlWt8D3oQ"/>
+              <ownedParameter xmi:id="_Qvr10JPAEd2WZsFFDBcVOQ" name="figList" type="_FGK1AJPAEd2WZsFFDBcVOQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_FW4xkpPAEd2WZsFFDBcVOQ" name="construct" visibility="public" concurrency="concurrent">
+              <ownedParameter xmi:id="_QvlvMJPAEd2WZsFFDBcVOQ" name="builder" type="_Lj-lQI_3Ed2IrLlWt8D3oQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_FW-4MZPAEd2WZsFFDBcVOQ" name="FigXMLDirector" visibility="public" concurrency="concurrent">
+              <ownedParameter xmi:id="_Qvr10ZPAEd2WZsFFDBcVOQ" name="figDoc" type="_FHBwoJPAEd2WZsFFDBcVOQ"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_FXvtMJPAEd2WZsFFDBcVOQ" memberEnd="_FWyq8JPAEd2WZsFFDBcVOQ _FXvtMZPAEd2WZsFFDBcVOQ">
+            <name xsi:nil="true"/>
+            <ownedEnd xmi:id="_FXvtMZPAEd2WZsFFDBcVOQ" name="" type="_E_9fUJPAEd2WZsFFDBcVOQ" association="_FXvtMJPAEd2WZsFFDBcVOQ">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FXvtMpPAEd2WZsFFDBcVOQ" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FXvtM5PAEd2WZsFFDBcVOQ"/>
+            </ownedEnd>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_E-PoEJPAEd2WZsFFDBcVOQ" name="impl">
+          <packagedElement xmi:type="uml:Class" xmi:id="_E-PoEZPAEd2WZsFFDBcVOQ" name="AppFigBuilder"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_FAo0wJPAEd2WZsFFDBcVOQ" name="impl">
+        <packagedElement xmi:type="uml:Class" xmi:id="_FAo0wZPAEd2WZsFFDBcVOQ" name="FigPosColor" visibility="package"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_FBZpwJPAEd2WZsFFDBcVOQ" name="Composite"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_FBl3AJPAEd2WZsFFDBcVOQ" name="FigDoc"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_FB4K4JPAEd2WZsFFDBcVOQ" name="Rectangle"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_FCQlYJPAEd2WZsFFDBcVOQ" name="Circle"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_FCi5QJPAEd2WZsFFDBcVOQ" name="FigList"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_FDTuQJPAEd2WZsFFDBcVOQ" name="FigFactory"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_FEKp4JPAEd2WZsFFDBcVOQ" name="Line"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_FEc9wJPAEd2WZsFFDBcVOQ" name="interfaces">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_FEc9wZPAEd2WZsFFDBcVOQ" name="FigPosColorInterface"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_FE1YQJPAEd2WZsFFDBcVOQ" name="RectangleInterface"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_FE7e4JPAEd2WZsFFDBcVOQ" name="FigDocInterface"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_FFBlgJPAEd2WZsFFDBcVOQ" name="FigListInterface"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_FFHsIJPAEd2WZsFFDBcVOQ" name="FigInterface"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_FFHsIZPAEd2WZsFFDBcVOQ" name="CompositeInterface"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_FFNywJPAEd2WZsFFDBcVOQ" name="CircleInterface"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_FFaAAJPAEd2WZsFFDBcVOQ" name="FigFactoryInterface"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_FF4hIJPAEd2WZsFFDBcVOQ" name="LineInterface"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Ln_ikI_3Ed2IrLlWt8D3oQ" name="javax">
+      <packagedElement xmi:type="uml:Package" xmi:id="_Ln_ikY_3Ed2IrLlWt8D3oQ" name="xml">
+        <packagedElement xmi:type="uml:Package" xmi:id="_Ln_iko_3Ed2IrLlWt8D3oQ" name="bind">
+          <packagedElement xmi:type="uml:Class" xmi:id="_LoFpMI_3Ed2IrLlWt8D3oQ" name="JAXBElement"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_F-bSsZPAEd2WZsFFDBcVOQ" name="Unmarshaller" isAbstract="true"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_F-hZUJPAEd2WZsFFDBcVOQ" name="Marshaller" isAbstract="true"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_F-nf8ZPAEd2WZsFFDBcVOQ" name="JAXBContext" isAbstract="true"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_F-tmkJPAEd2WZsFFDBcVOQ" name="JAXBException"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_F-ztMpPAEd2WZsFFDBcVOQ" name="UnmarshalException"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_F-VMEZPAEd2WZsFFDBcVOQ" name="validation">
+          <packagedElement xmi:type="uml:Class" xmi:id="_F-bSsJPAEd2WZsFFDBcVOQ" name="SchemaFactory" isAbstract="true"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_F-tmkZPAEd2WZsFFDBcVOQ" name="Schema" isAbstract="true"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_F9kXEJPAEd2WZsFFDBcVOQ" name="swing">
+        <packagedElement xmi:type="uml:Class" xmi:id="_F9kXEZPAEd2WZsFFDBcVOQ" name="JFrame"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_LoLv0Y_3Ed2IrLlWt8D3oQ" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_LoLv0o_3Ed2IrLlWt8D3oQ" name="util">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_LoR2cI_3Ed2IrLlWt8D3oQ" name="List" isAbstract="true"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_LoR2co_3Ed2IrLlWt8D3oQ" name="Iterator" isAbstract="true"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_L3dh8o_3Ed2IrLlWt8D3oQ" name="lang">
+        <packagedElement xmi:type="uml:Class" xmi:id="_L3jokI_3Ed2IrLlWt8D3oQ" name="String" isLeaf="true"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_F-VMEJPAEd2WZsFFDBcVOQ" name="Class" isLeaf="true"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_F-nf8JPAEd2WZsFFDBcVOQ" name="System" isLeaf="true"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_F_GBEJPAEd2WZsFFDBcVOQ" name="Boolean" isLeaf="true"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_F-ztMJPAEd2WZsFFDBcVOQ" name="io">
+        <packagedElement xmi:type="uml:Class" xmi:id="_F-ztMZPAEd2WZsFFDBcVOQ" name="PrintStream"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_LoX9EY_3Ed2IrLlWt8D3oQ" supplier="_LoFpMI_3Ed2IrLlWt8D3oQ" client="_LJoLkI_3Ed2IrLlWt8D3oQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_LpbF8Y_3Ed2IrLlWt8D3oQ" supplier="_LoFpMI_3Ed2IrLlWt8D3oQ" client="_LJoLkI_3Ed2IrLlWt8D3oQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_LqYIMo_3Ed2IrLlWt8D3oQ" supplier="_LoX9EI_3Ed2IrLlWt8D3oQ" client="_LJoLkI_3Ed2IrLlWt8D3oQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_Lrb4IY_3Ed2IrLlWt8D3oQ" supplier="_LoX9EI_3Ed2IrLlWt8D3oQ" client="_LJoLkI_3Ed2IrLlWt8D3oQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_LsAf4I_3Ed2IrLlWt8D3oQ" supplier="_LoX9EI_3Ed2IrLlWt8D3oQ" client="_LJoLkI_3Ed2IrLlWt8D3oQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_Ls3bgo_3Ed2IrLlWt8D3oQ" supplier="_LoR2cI_3Ed2IrLlWt8D3oQ" client="_LJoLkI_3Ed2IrLlWt8D3oQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_LtV8oY_3Ed2IrLlWt8D3oQ" supplier="_LoR2cI_3Ed2IrLlWt8D3oQ" client="_LJoLkI_3Ed2IrLlWt8D3oQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_Lt6kYo_3Ed2IrLlWt8D3oQ" supplier="_Lj-lQI_3Ed2IrLlWt8D3oQ" client="_LJoLkI_3Ed2IrLlWt8D3oQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_LuZFgY_3Ed2IrLlWt8D3oQ" supplier="_Lj-lQI_3Ed2IrLlWt8D3oQ" client="_LJoLkI_3Ed2IrLlWt8D3oQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_Lu3moo_3Ed2IrLlWt8D3oQ" supplier="_LjsRYI_3Ed2IrLlWt8D3oQ" client="_LJoLkI_3Ed2IrLlWt8D3oQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_LvcOYY_3Ed2IrLlWt8D3oQ" supplier="_LjsRYI_3Ed2IrLlWt8D3oQ" client="_LJoLkI_3Ed2IrLlWt8D3oQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_Lv6vgo_3Ed2IrLlWt8D3oQ" supplier="_LoFpMY_3Ed2IrLlWt8D3oQ" client="_LJoLkI_3Ed2IrLlWt8D3oQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_LwfXQY_3Ed2IrLlWt8D3oQ" supplier="_LoFpMY_3Ed2IrLlWt8D3oQ" client="_LJoLkI_3Ed2IrLlWt8D3oQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_Lw94Yo_3Ed2IrLlWt8D3oQ" supplier="_LoFpMY_3Ed2IrLlWt8D3oQ" client="_LJoLkI_3Ed2IrLlWt8D3oQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_LxjHMI_3Ed2IrLlWt8D3oQ" supplier="_LoR2co_3Ed2IrLlWt8D3oQ" client="_LJoLkI_3Ed2IrLlWt8D3oQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_LygJcY_3Ed2IrLlWt8D3oQ" supplier="_LkLZkI_3Ed2IrLlWt8D3oQ" client="_LJoLkI_3Ed2IrLlWt8D3oQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_Ly-qkY_3Ed2IrLlWt8D3oQ" supplier="_LkLZkI_3Ed2IrLlWt8D3oQ" client="_LJoLkI_3Ed2IrLlWt8D3oQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_LzjSUo_3Ed2IrLlWt8D3oQ" supplier="_LoLv0I_3Ed2IrLlWt8D3oQ" client="_LJoLkI_3Ed2IrLlWt8D3oQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_L0Bzco_3Ed2IrLlWt8D3oQ" supplier="_LoR2cY_3Ed2IrLlWt8D3oQ" client="_LJoLkI_3Ed2IrLlWt8D3oQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_L0mbMY_3Ed2IrLlWt8D3oQ" supplier="_LoR2cY_3Ed2IrLlWt8D3oQ" client="_LJoLkI_3Ed2IrLlWt8D3oQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_L1E8Uo_3Ed2IrLlWt8D3oQ" supplier="_LoR2cY_3Ed2IrLlWt8D3oQ" client="_LJoLkI_3Ed2IrLlWt8D3oQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_L4O-AI_3Ed2IrLlWt8D3oQ" supplier="_L3jokI_3Ed2IrLlWt8D3oQ" client="_Lj-lQI_3Ed2IrLlWt8D3oQ"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_LjgEII_3Ed2IrLlWt8D3oQ" name="xmlclasses">
+      <packagedElement xmi:type="uml:Class" xmi:id="_LjsRYI_3Ed2IrLlWt8D3oQ" name="FigDoc"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LkLZkI_3Ed2IrLlWt8D3oQ" name="FigListType"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LoFpMY_3Ed2IrLlWt8D3oQ" name="CircleType"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LoLv0I_3Ed2IrLlWt8D3oQ" name="FigType" isAbstract="true"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LoR2cY_3Ed2IrLlWt8D3oQ" name="CompositeType"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LoX9EI_3Ed2IrLlWt8D3oQ" name="RectangleType"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Yz90oY_3Ed2IrLlWt8D3oQ" name="FigPosColorType"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Y0QIgI_3Ed2IrLlWt8D3oQ" name="ObjectFactory"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_5EsAIJO_Ed2WZsFFDBcVOQ" name="xmlclasses">
+      <packagedElement xmi:type="uml:Class" xmi:id="_FF-nwJPAEd2WZsFFDBcVOQ" name="CircleType"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_FGK1AJPAEd2WZsFFDBcVOQ" name="FigListType"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_FHBwoJPAEd2WZsFFDBcVOQ" name="FigDoc" clientDependency="_HMExkJPAEd2WZsFFDBcVOQ">
+        <ownedAttribute xmi:id="_HLrwAJPAEd2WZsFFDBcVOQ" name="figList" visibility="protected" type="_FGK1AJPAEd2WZsFFDBcVOQ" association="_HL-q8JPAEd2WZsFFDBcVOQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HL39QpPAEd2WZsFFDBcVOQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HL39QZPAEd2WZsFFDBcVOQ"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_HLx2oJPAEd2WZsFFDBcVOQ" name="setFigList" visibility="public" concurrency="concurrent">
+          <ownedParameter xmi:id="_HLx2oZPAEd2WZsFFDBcVOQ" name="value" type="_FGK1AJPAEd2WZsFFDBcVOQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_HLx2opPAEd2WZsFFDBcVOQ" name="getFigList" visibility="public" concurrency="concurrent">
+          <ownedParameter xmi:id="_HL39QJPAEd2WZsFFDBcVOQ" type="_FGK1AJPAEd2WZsFFDBcVOQ" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_FHUrkJPAEd2WZsFFDBcVOQ" name="FigType" isAbstract="true"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_FHayMJPAEd2WZsFFDBcVOQ" name="ObjectFactory"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_FI2VkJPAEd2WZsFFDBcVOQ" name="CompositeType"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_FJCi0JPAEd2WZsFFDBcVOQ" name="RectangleType"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_FJOwEJPAEd2WZsFFDBcVOQ" name="FigPosColorType"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_HL-q8JPAEd2WZsFFDBcVOQ" memberEnd="_HLrwAJPAEd2WZsFFDBcVOQ _HL-q8ZPAEd2WZsFFDBcVOQ">
+        <name xsi:nil="true"/>
+        <ownedEnd xmi:id="_HL-q8ZPAEd2WZsFFDBcVOQ" name="" type="_FHBwoJPAEd2WZsFFDBcVOQ" association="_HL-q8JPAEd2WZsFFDBcVOQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HL-q8pPAEd2WZsFFDBcVOQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HL-q85PAEd2WZsFFDBcVOQ"/>
+        </ownedEnd>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_E1vzYJPAEd2WZsFFDBcVOQ" name="draw">
+      <packagedElement xmi:type="uml:Package" xmi:id="_E1vzYZPAEd2WZsFFDBcVOQ" name="impl">
+        <packagedElement xmi:type="uml:Class" xmi:id="_E116AJPAEd2WZsFFDBcVOQ" name="CircleDrawable"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_E2OUgJPAEd2WZsFFDBcVOQ" name="FigDocDrawable"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_E2ahwJPAEd2WZsFFDBcVOQ" name="RectangleDrawable"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_E2s1oJPAEd2WZsFFDBcVOQ" name="LineDrawable"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_E3FQIJPAEd2WZsFFDBcVOQ" name="FigListDrawable"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_E32FIJPAEd2WZsFFDBcVOQ" name="FigDrawableFactory"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_E7SasJPAEd2WZsFFDBcVOQ" name="CompositeDrawable"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_E7en8JPAEd2WZsFFDBcVOQ" name="FigPosColorDrawable"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_E79JEJPAEd2WZsFFDBcVOQ" name="interfaces">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_E79JEZPAEd2WZsFFDBcVOQ" name="RectangleDrawableInterface"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_E8DPsJPAEd2WZsFFDBcVOQ" name="LineDrawableInterface"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_E8JWUJPAEd2WZsFFDBcVOQ" name="FigDrawableFactoryInterface"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_E8t-EJPAEd2WZsFFDBcVOQ" name="CompositeDrawableInterface"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_E80EsJPAEd2WZsFFDBcVOQ" name="DrawableInterface"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_E86LUJPAEd2WZsFFDBcVOQ" name="CircleDrawableInterface"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_E86LUZPAEd2WZsFFDBcVOQ" name="FigDocDrawableInterface"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_E9AR8JPAEd2WZsFFDBcVOQ" name="exibicao">
+      <packagedElement xmi:type="uml:Class" xmi:id="_E9GYkJPAEd2WZsFFDBcVOQ" name="Exibidor"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_FKFrsJPAEd2WZsFFDBcVOQ" name="testes">
+      <packagedElement xmi:type="uml:Class" xmi:id="_FKFrsZPAEd2WZsFFDBcVOQ" name="Teste01" clientDependency="_F_GBEZPAEd2WZsFFDBcVOQ _F_kiMZPAEd2WZsFFDBcVOQ _F_88spPAEd2WZsFFDBcVOQ _GAbd0pPAEd2WZsFFDBcVOQ _GA5-8ZPAEd2WZsFFDBcVOQ _GBSZcpPAEd2WZsFFDBcVOQ _GBw6kZPAEd2WZsFFDBcVOQ _GChvkZPAEd2WZsFFDBcVOQ _GDA3wpPAEd2WZsFFDBcVOQ _GDZSQZPAEd2WZsFFDBcVOQ _GD3zYpPAEd2WZsFFDBcVOQ _GEQN4ZPAEd2WZsFFDBcVOQ _GEuvApPAEd2WZsFFDBcVOQ _GFHJgpPAEd2WZsFFDBcVOQ _GFlqoZPAEd2WZsFFDBcVOQ _GGELwpPAEd2WZsFFDBcVOQ _GGis4pPAEd2WZsFFDBcVOQ _GHNbQpPAEd2WZsFFDBcVOQ _GHl1wZPAEd2WZsFFDBcVOQ _GIEW4pPAEd2WZsFFDBcVOQ _GIcxYpPAEd2WZsFFDBcVOQ _GJNmYJPAEd2WZsFFDBcVOQ _GKFJEpPAEd2WZsFFDBcVOQ _GKdjkZPAEd2WZsFFDBcVOQ _GK8EsZPAEd2WZsFFDBcVOQ _GLUfMpPAEd2WZsFFDBcVOQ _GL_NkZPAEd2WZsFFDBcVOQ _GMduspPAEd2WZsFFDBcVOQ _GM2JMpPAEd2WZsFFDBcVOQ _GNg3kJPAEd2WZsFFDBcVOQ _GN5SEZPAEd2WZsFFDBcVOQ _GOXzMZPAEd2WZsFFDBcVOQ _GPIoMZPAEd2WZsFFDBcVOQ _GPhCsZPAEd2WZsFFDBcVOQ _GP_j0ZPAEd2WZsFFDBcVOQ _GQYlYZPAEd2WZsFFDBcVOQ _GRDTwZPAEd2WZsFFDBcVOQ _GRh04ZPAEd2WZsFFDBcVOQ _GR6PYZPAEd2WZsFFDBcVOQ _GSYwgpPAEd2WZsFFDBcVOQ _GSxLAZPAEd2WZsFFDBcVOQ _GTPsIZPAEd2WZsFFDBcVOQ">
+        <generalization xmi:id="_F9kXEpPAEd2WZsFFDBcVOQ" general="_F9kXEZPAEd2WZsFFDBcVOQ"/>
+        <ownedAttribute xmi:id="_F9wkUJPAEd2WZsFFDBcVOQ" name="exibidor" visibility="private" type="_E9GYkJPAEd2WZsFFDBcVOQ" association="_F-I-0pPAEd2WZsFFDBcVOQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F-I-0ZPAEd2WZsFFDBcVOQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_F-I-0JPAEd2WZsFFDBcVOQ"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_F9wkUZPAEd2WZsFFDBcVOQ" name="main" visibility="public" isStatic="true" concurrency="concurrent">
+          <ownedParameter xmi:id="_F-C4MJPAEd2WZsFFDBcVOQ" name="args" type="_L3jokI_3Ed2IrLlWt8D3oQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_F-C4MpPAEd2WZsFFDBcVOQ" name="Teste01" visibility="public" concurrency="concurrent"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_F-I-0pPAEd2WZsFFDBcVOQ" memberEnd="_F9wkUJPAEd2WZsFFDBcVOQ _F-I-05PAEd2WZsFFDBcVOQ">
+        <name xsi:nil="true"/>
+        <ownedEnd xmi:id="_F-I-05PAEd2WZsFFDBcVOQ" name="" type="_FKFrsZPAEd2WZsFFDBcVOQ" association="_F-I-0pPAEd2WZsFFDBcVOQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F-I-1JPAEd2WZsFFDBcVOQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_F-I-1ZPAEd2WZsFFDBcVOQ"/>
+        </ownedEnd>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_Fpm5QJPAEd2WZsFFDBcVOQ" supplier="_LoFpMI_3Ed2IrLlWt8D3oQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_FqqCIZPAEd2WZsFFDBcVOQ" supplier="_LoFpMI_3Ed2IrLlWt8D3oQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_FrIjQpPAEd2WZsFFDBcVOQ" supplier="_FJCi0JPAEd2WZsFFDBcVOQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_FseAApPAEd2WZsFFDBcVOQ" supplier="_LoR2cI_3Ed2IrLlWt8D3oQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_FtIuYZPAEd2WZsFFDBcVOQ" supplier="_LoR2cI_3Ed2IrLlWt8D3oQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_FtnPgpPAEd2WZsFFDBcVOQ" supplier="_Lj-lQI_3Ed2IrLlWt8D3oQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_FuL3QZPAEd2WZsFFDBcVOQ" supplier="_Lj-lQI_3Ed2IrLlWt8D3oQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_FuqYYpPAEd2WZsFFDBcVOQ" supplier="_FHBwoJPAEd2WZsFFDBcVOQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_Fv6VkpPAEd2WZsFFDBcVOQ" supplier="_FF-nwJPAEd2WZsFFDBcVOQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_FxPyUpPAEd2WZsFFDBcVOQ" supplier="_LoR2co_3Ed2IrLlWt8D3oQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_FxuTcZPAEd2WZsFFDBcVOQ" supplier="_FGK1AJPAEd2WZsFFDBcVOQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_FzDwMpPAEd2WZsFFDBcVOQ" supplier="_FI2VkJPAEd2WZsFFDBcVOQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_F03uEJPAEd2WZsFFDBcVOQ" supplier="_LoFpMI_3Ed2IrLlWt8D3oQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_F1WPMZPAEd2WZsFFDBcVOQ" supplier="_FJCi0JPAEd2WZsFFDBcVOQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_F2sTApPAEd2WZsFFDBcVOQ" supplier="_LoR2cI_3Ed2IrLlWt8D3oQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_F3EtgZPAEd2WZsFFDBcVOQ" supplier="_Lj-lQI_3Ed2IrLlWt8D3oQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_F3jOoZPAEd2WZsFFDBcVOQ" supplier="_FHBwoJPAEd2WZsFFDBcVOQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_F4aKQpPAEd2WZsFFDBcVOQ" supplier="_FF-nwJPAEd2WZsFFDBcVOQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_F6B64pPAEd2WZsFFDBcVOQ" supplier="_LoR2co_3Ed2IrLlWt8D3oQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_F6gcAZPAEd2WZsFFDBcVOQ" supplier="_FGK1AJPAEd2WZsFFDBcVOQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_F7vyIpPAEd2WZsFFDBcVOQ" supplier="_FI2VkJPAEd2WZsFFDBcVOQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_F-5z0JPAEd2WZsFFDBcVOQ" name="org">
+      <packagedElement xmi:type="uml:Package" xmi:id="_F-5z0ZPAEd2WZsFFDBcVOQ" name="xml">
+        <packagedElement xmi:type="uml:Package" xmi:id="_F-5z0pPAEd2WZsFFDBcVOQ" name="sax">
+          <packagedElement xmi:type="uml:Class" xmi:id="_F-_6cJPAEd2WZsFFDBcVOQ" name="SAXException"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_F_GBEZPAEd2WZsFFDBcVOQ" supplier="_E_9fUJPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_F_kiMZPAEd2WZsFFDBcVOQ" supplier="_E_9fUJPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_F_88spPAEd2WZsFFDBcVOQ" supplier="_F-nf8JPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GAbd0pPAEd2WZsFFDBcVOQ" supplier="_F-bSsZPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GA5-8ZPAEd2WZsFFDBcVOQ" supplier="_F-bSsZPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GBSZcpPAEd2WZsFFDBcVOQ" supplier="_F-VMEJPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GBw6kZPAEd2WZsFFDBcVOQ" supplier="_E-PoEZPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GChvkZPAEd2WZsFFDBcVOQ" supplier="_E-PoEZPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GDA3wpPAEd2WZsFFDBcVOQ" supplier="_F-ztMZPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GDZSQZPAEd2WZsFFDBcVOQ" supplier="_FE7e4JPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GD3zYpPAEd2WZsFFDBcVOQ" supplier="_F-_6cJPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GEQN4ZPAEd2WZsFFDBcVOQ" supplier="_F-_6cJPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GEuvApPAEd2WZsFFDBcVOQ" supplier="_F-ztMpPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GFHJgpPAEd2WZsFFDBcVOQ" supplier="_F-hZUJPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GFlqoZPAEd2WZsFFDBcVOQ" supplier="_F-hZUJPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GGELwpPAEd2WZsFFDBcVOQ" supplier="_F_GBEJPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GGis4pPAEd2WZsFFDBcVOQ" supplier="_F-tmkZPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GHNbQpPAEd2WZsFFDBcVOQ" supplier="_F-nf8ZPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GHl1wZPAEd2WZsFFDBcVOQ" supplier="_F-nf8ZPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GIEW4pPAEd2WZsFFDBcVOQ" supplier="_F-nf8ZPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GIcxYpPAEd2WZsFFDBcVOQ" supplier="_E9GYkJPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_GJNmYJPAEd2WZsFFDBcVOQ" supplier="_F9kXEZPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GKFJEpPAEd2WZsFFDBcVOQ" supplier="_FDTuQJPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GKdjkZPAEd2WZsFFDBcVOQ" supplier="_F-tmkJPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GK8EsZPAEd2WZsFFDBcVOQ" supplier="_F-tmkJPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GLUfMpPAEd2WZsFFDBcVOQ" supplier="_F-bSsJPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GL_NkZPAEd2WZsFFDBcVOQ" supplier="_F-bSsJPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GMduspPAEd2WZsFFDBcVOQ" supplier="_F-bSsJPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GM2JMpPAEd2WZsFFDBcVOQ" supplier="_L3jokI_3Ed2IrLlWt8D3oQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GNg3kJPAEd2WZsFFDBcVOQ" supplier="_E_9fUJPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GN5SEZPAEd2WZsFFDBcVOQ" supplier="_F-bSsZPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GOXzMZPAEd2WZsFFDBcVOQ" supplier="_F-VMEJPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GPIoMZPAEd2WZsFFDBcVOQ" supplier="_E-PoEZPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GPhCsZPAEd2WZsFFDBcVOQ" supplier="_F-ztMZPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GP_j0ZPAEd2WZsFFDBcVOQ" supplier="_F-_6cJPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GQYlYZPAEd2WZsFFDBcVOQ" supplier="_F-hZUJPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GRDTwZPAEd2WZsFFDBcVOQ" supplier="_F-nf8ZPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_GRh04ZPAEd2WZsFFDBcVOQ" supplier="_F9kXEZPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GR6PYZPAEd2WZsFFDBcVOQ" supplier="_FHBwoJPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GSYwgpPAEd2WZsFFDBcVOQ" supplier="_FDTuQJPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GSxLAZPAEd2WZsFFDBcVOQ" supplier="_F-tmkJPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GTPsIZPAEd2WZsFFDBcVOQ" supplier="_F-bSsJPAEd2WZsFFDBcVOQ" client="_FKFrsZPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_HMExkJPAEd2WZsFFDBcVOQ" supplier="_FGK1AJPAEd2WZsFFDBcVOQ" client="_FHBwoJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_QjjeUJPAEd2WZsFFDBcVOQ" supplier="_LoFpMI_3Ed2IrLlWt8D3oQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_Qj740ZPAEd2WZsFFDBcVOQ" supplier="_FJCi0JPAEd2WZsFFDBcVOQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_Qlv2spPAEd2WZsFFDBcVOQ" supplier="_LoR2cI_3Ed2IrLlWt8D3oQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_QmIRMZPAEd2WZsFFDBcVOQ" supplier="_Lj-lQI_3Ed2IrLlWt8D3oQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_QmmyUZPAEd2WZsFFDBcVOQ" supplier="_FHBwoJPAEd2WZsFFDBcVOQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_QneVApPAEd2WZsFFDBcVOQ" supplier="_FF-nwJPAEd2WZsFFDBcVOQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_QozxwpPAEd2WZsFFDBcVOQ" supplier="_LoR2co_3Ed2IrLlWt8D3oQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_QpSS4ZPAEd2WZsFFDBcVOQ" supplier="_FGK1AJPAEd2WZsFFDBcVOQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_QrAKIZPAEd2WZsFFDBcVOQ" supplier="_FI2VkJPAEd2WZsFFDBcVOQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_Qv4DEJPAEd2WZsFFDBcVOQ" supplier="_LoFpMI_3Ed2IrLlWt8D3oQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_QwWkMZPAEd2WZsFFDBcVOQ" supplier="_FJCi0JPAEd2WZsFFDBcVOQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_Qwu-sZPAEd2WZsFFDBcVOQ" supplier="_FJCi0JPAEd2WZsFFDBcVOQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_QxNf0pPAEd2WZsFFDBcVOQ" supplier="_FJCi0JPAEd2WZsFFDBcVOQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_Qxl6UpPAEd2WZsFFDBcVOQ" supplier="_LoR2cI_3Ed2IrLlWt8D3oQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_QyKiEZPAEd2WZsFFDBcVOQ" supplier="_Lj-lQI_3Ed2IrLlWt8D3oQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_Qyi8kZPAEd2WZsFFDBcVOQ" supplier="_FHBwoJPAEd2WZsFFDBcVOQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_QzBdsZPAEd2WZsFFDBcVOQ" supplier="_FHBwoJPAEd2WZsFFDBcVOQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_QzySspPAEd2WZsFFDBcVOQ" supplier="_FF-nwJPAEd2WZsFFDBcVOQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_Q0Qz0ZPAEd2WZsFFDBcVOQ" supplier="_FF-nwJPAEd2WZsFFDBcVOQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_Q0pOUpPAEd2WZsFFDBcVOQ" supplier="_FF-nwJPAEd2WZsFFDBcVOQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_Q1aqYpPAEd2WZsFFDBcVOQ" supplier="_LoR2co_3Ed2IrLlWt8D3oQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_Q1zE4ZPAEd2WZsFFDBcVOQ" supplier="_FGK1AJPAEd2WZsFFDBcVOQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_Q2RmAZPAEd2WZsFFDBcVOQ" supplier="_FGK1AJPAEd2WZsFFDBcVOQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_Q2qAgpPAEd2WZsFFDBcVOQ" supplier="_FHUrkJPAEd2WZsFFDBcVOQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_Q3IhopPAEd2WZsFFDBcVOQ" supplier="_FI2VkJPAEd2WZsFFDBcVOQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_Q3nCwZPAEd2WZsFFDBcVOQ" supplier="_FI2VkJPAEd2WZsFFDBcVOQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_Q3_dQpPAEd2WZsFFDBcVOQ" supplier="_FI2VkJPAEd2WZsFFDBcVOQ" client="_E_9fUJPAEd2WZsFFDBcVOQ"/>
+    <profileApplication xmi:id="_KDQ5II82Ed2bucG14DOY8g">
+      <eAnnotations xmi:id="_KDW_wI82Ed2bucG14DOY8g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/org.eclipse.uml2.uml.resources/profiles/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/org.eclipse.uml2.uml.resources/profiles/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_KDjNAI82Ed2bucG14DOY8g">
+      <eAnnotations xmi:id="_KDjNAY82Ed2bucG14DOY8g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Meta_3.2_SN.profile.uml#_7sFH4CK5EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Meta_3.2_SN.profile.uml#_RgVcYiK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_KDjNAo82Ed2bucG14DOY8g">
+      <eAnnotations xmi:id="_KDjNA482Ed2bucG14DOY8g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Java.profile.uml#_aZhLlH6MEdmbwasWWc4yvw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Java.profile.uml#_aZhLkH6MEdmbwasWWc4yvw"/>
+    </profileApplication>
+    <profileApplication xmi:id="_KDjNBI82Ed2bucG14DOY8g">
+      <eAnnotations xmi:id="_KDpToI82Ed2bucG14DOY8g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Archetype.profile.uml#_f6v3QOROEduiB7qvAtFfTA"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Archetype.profile.uml#_j-cLoORNEduiB7qvAtFfTA"/>
+    </profileApplication>
+    <profileApplication xmi:id="_KDpToY82Ed2bucG14DOY8g">
+      <eAnnotations xmi:id="_KDpToo82Ed2bucG14DOY8g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Common_3.2_SN.profile.uml#_7hMtlSK5EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Common_3.2_SN.profile.uml#_RgfPHCK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_KDpTo482Ed2bucG14DOY8g">
+      <eAnnotations xmi:id="_KDpTpI82Ed2bucG14DOY8g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Xml_3.2_SN.profile.uml#_7JNEVSK5EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Xml_3.2_SN.profile.uml#_RgVfXCK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_KDpTpY82Ed2bucG14DOY8g">
+      <eAnnotations xmi:id="_KDpTpo82Ed2bucG14DOY8g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Persistence_3.2_SN.profile.uml#_AevloCK6EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Persistence_3.2_SN.profile.uml#_RgVfdiK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_KDvaQI82Ed2bucG14DOY8g">
+      <eAnnotations xmi:id="_KDvaQY82Ed2bucG14DOY8g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Process_3.2_SN.profile.uml#_7D2DMCK5EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Process_3.2_SN.profile.uml#_RgfOnSK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_KDvaQo82Ed2bucG14DOY8g">
+      <eAnnotations xmi:id="_KD1g4I82Ed2bucG14DOY8g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Meta.profile.uml#_kycnUIE4EduiecUdqhZMrw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Meta.profile.uml#_EJn30IE0EduiecUdqhZMrw"/>
+    </profileApplication>
+    <profileApplication xmi:id="_KD1g4Y82Ed2bucG14DOY8g">
+      <eAnnotations xmi:id="_KD1g4o82Ed2bucG14DOY8g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Presentation_3.2_SN.profile.uml#_4Um1wCK5EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Presentation_3.2_SN.profile.uml#_RgVcjiK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_KD7ngI82Ed2bucG14DOY8g">
+      <eAnnotations xmi:id="_KEBuII82Ed2bucG14DOY8g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo.profile.uml#_zrN_1iUoEdmNXYQzyImvfA"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo.profile.uml#_zrN_0iUoEdmNXYQzyImvfA"/>
+    </profileApplication>
+    <profileApplication xmi:id="_KEBuIY82Ed2bucG14DOY8g">
+      <eAnnotations xmi:id="_KEBuIo82Ed2bucG14DOY8g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Webservice_3.2_SN.profile.uml#_6jgWRSK5EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Webservice_3.2_SN.profile.uml#_RgVmWCK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_KEBuI482Ed2bucG14DOY8g">
+      <eAnnotations xmi:id="_KEH0wI82Ed2bucG14DOY8g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/org.eclipse.uml2.uml.resources/profiles/UML2.profile.uml#_dhEUENSUEdqN9tnr0j3PAQ"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/org.eclipse.uml2.uml.resources/profiles/UML2.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_KEH0wY82Ed2bucG14DOY8g">
+      <eAnnotations xmi:id="_KEH0wo82Ed2bucG14DOY8g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Service_3.2_SN.profile.uml#_6VpgcCK5EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Service_3.2_SN.profile.uml#_RgMRQCK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+  </uml:Model>
+  <JavaProfile_1:JavaProfile__MultidimensionalArray xmi:id="_F-C4MZPAEd2WZsFFDBcVOQ" base_Parameter="_F-C4MJPAEd2WZsFFDBcVOQ" dimension="1"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GJmn8JPAEd2WZsFFDBcVOQ" base_Element="_GJNmYJPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GR6PYJPAEd2WZsFFDBcVOQ" base_Element="_GRh04ZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_LpbF8I_3Ed2IrLlWt8D3oQ" base_Element="_LoX9EY_3Ed2IrLlWt8D3oQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_LqYIMI_3Ed2IrLlWt8D3oQ" base_Usage="_LpbF8Y_3Ed2IrLlWt8D3oQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_LqYIMY_3Ed2IrLlWt8D3oQ" base_Element="_LpbF8Y_3Ed2IrLlWt8D3oQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_Lrb4II_3Ed2IrLlWt8D3oQ" base_Element="_LqYIMo_3Ed2IrLlWt8D3oQ"/>
+  <Omondo_1:Omondo__Access xmi:id="_Lr6ZQI_3Ed2IrLlWt8D3oQ" base_Usage="_Lrb4IY_3Ed2IrLlWt8D3oQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_Lr6ZQY_3Ed2IrLlWt8D3oQ" base_Element="_Lrb4IY_3Ed2IrLlWt8D3oQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_Ls3bgI_3Ed2IrLlWt8D3oQ" base_Usage="_LsAf4I_3Ed2IrLlWt8D3oQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_Ls3bgY_3Ed2IrLlWt8D3oQ" base_Element="_LsAf4I_3Ed2IrLlWt8D3oQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_LtV8oI_3Ed2IrLlWt8D3oQ" base_Element="_Ls3bgo_3Ed2IrLlWt8D3oQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_Lt6kYI_3Ed2IrLlWt8D3oQ" base_Usage="_LtV8oY_3Ed2IrLlWt8D3oQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_Lt6kYY_3Ed2IrLlWt8D3oQ" base_Element="_LtV8oY_3Ed2IrLlWt8D3oQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_LuZFgI_3Ed2IrLlWt8D3oQ" base_Element="_Lt6kYo_3Ed2IrLlWt8D3oQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_Lu3moI_3Ed2IrLlWt8D3oQ" base_Usage="_LuZFgY_3Ed2IrLlWt8D3oQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_Lu3moY_3Ed2IrLlWt8D3oQ" base_Element="_LuZFgY_3Ed2IrLlWt8D3oQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_LvcOYI_3Ed2IrLlWt8D3oQ" base_Element="_Lu3moo_3Ed2IrLlWt8D3oQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_Lv6vgI_3Ed2IrLlWt8D3oQ" base_Usage="_LvcOYY_3Ed2IrLlWt8D3oQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_Lv6vgY_3Ed2IrLlWt8D3oQ" base_Element="_LvcOYY_3Ed2IrLlWt8D3oQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_LwfXQI_3Ed2IrLlWt8D3oQ" base_Element="_Lv6vgo_3Ed2IrLlWt8D3oQ"/>
+  <Omondo_1:Omondo__Access xmi:id="_Lw94YI_3Ed2IrLlWt8D3oQ" base_Usage="_LwfXQY_3Ed2IrLlWt8D3oQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_Lw94YY_3Ed2IrLlWt8D3oQ" base_Element="_LwfXQY_3Ed2IrLlWt8D3oQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_LxdAkI_3Ed2IrLlWt8D3oQ" base_Usage="_Lw94Yo_3Ed2IrLlWt8D3oQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_LxdAkY_3Ed2IrLlWt8D3oQ" base_Element="_Lw94Yo_3Ed2IrLlWt8D3oQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_LygJcI_3Ed2IrLlWt8D3oQ" base_Element="_LxjHMI_3Ed2IrLlWt8D3oQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_Ly-qkI_3Ed2IrLlWt8D3oQ" base_Element="_LygJcY_3Ed2IrLlWt8D3oQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_LzjSUI_3Ed2IrLlWt8D3oQ" base_Usage="_Ly-qkY_3Ed2IrLlWt8D3oQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_LzjSUY_3Ed2IrLlWt8D3oQ" base_Element="_Ly-qkY_3Ed2IrLlWt8D3oQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_L0BzcI_3Ed2IrLlWt8D3oQ" base_Usage="_LzjSUo_3Ed2IrLlWt8D3oQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_L0BzcY_3Ed2IrLlWt8D3oQ" base_Element="_LzjSUo_3Ed2IrLlWt8D3oQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_L0mbMI_3Ed2IrLlWt8D3oQ" base_Element="_L0Bzco_3Ed2IrLlWt8D3oQ"/>
+  <Omondo_1:Omondo__Access xmi:id="_L1E8UI_3Ed2IrLlWt8D3oQ" base_Usage="_L0mbMY_3Ed2IrLlWt8D3oQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_L1E8UY_3Ed2IrLlWt8D3oQ" base_Element="_L0mbMY_3Ed2IrLlWt8D3oQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_L1jdcI_3Ed2IrLlWt8D3oQ" base_Usage="_L1E8Uo_3Ed2IrLlWt8D3oQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_L1jdcY_3Ed2IrLlWt8D3oQ" base_Element="_L1E8Uo_3Ed2IrLlWt8D3oQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_L4zlwI_3Ed2IrLlWt8D3oQ" base_Usage="_L4O-AI_3Ed2IrLlWt8D3oQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_L4zlwY_3Ed2IrLlWt8D3oQ" base_Element="_L4O-AI_3Ed2IrLlWt8D3oQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_FqqCIJPAEd2WZsFFDBcVOQ" base_Element="_Fpm5QJPAEd2WZsFFDBcVOQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_FrIjQJPAEd2WZsFFDBcVOQ" base_Usage="_FqqCIZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_FrIjQZPAEd2WZsFFDBcVOQ" base_Element="_FqqCIZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_FrnEYJPAEd2WZsFFDBcVOQ" base_Element="_FrIjQpPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_FtIuYJPAEd2WZsFFDBcVOQ" base_Element="_FseAApPAEd2WZsFFDBcVOQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_FtnPgJPAEd2WZsFFDBcVOQ" base_Usage="_FtIuYZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_FtnPgZPAEd2WZsFFDBcVOQ" base_Element="_FtIuYZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_FuL3QJPAEd2WZsFFDBcVOQ" base_Element="_FtnPgpPAEd2WZsFFDBcVOQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_FuqYYJPAEd2WZsFFDBcVOQ" base_Usage="_FuL3QZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_FuqYYZPAEd2WZsFFDBcVOQ" base_Element="_FuL3QZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_Fvb0cJPAEd2WZsFFDBcVOQ" base_Element="_FuqYYpPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_FwSwEJPAEd2WZsFFDBcVOQ" base_Element="_Fv6VkpPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_FxuTcJPAEd2WZsFFDBcVOQ" base_Element="_FxPyUpPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_FyGt8JPAEd2WZsFFDBcVOQ" base_Element="_FxuTcZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_FzcKsJPAEd2WZsFFDBcVOQ" base_Element="_FzDwMpPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_F1WPMJPAEd2WZsFFDBcVOQ" base_Element="_F03uEJPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_F1vQwJPAEd2WZsFFDBcVOQ" base_Element="_F1WPMZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_F3EtgJPAEd2WZsFFDBcVOQ" base_Element="_F2sTApPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_F3jOoJPAEd2WZsFFDBcVOQ" base_Element="_F3EtgZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_F37pIJPAEd2WZsFFDBcVOQ" base_Element="_F3jOoZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_F5K_QJPAEd2WZsFFDBcVOQ" base_Element="_F4aKQpPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_F6gcAJPAEd2WZsFFDBcVOQ" base_Element="_F6B64pPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_F642gJPAEd2WZsFFDBcVOQ" base_Element="_F6gcAZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_F8OTQJPAEd2WZsFFDBcVOQ" base_Element="_F7vyIpPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_F_kiMJPAEd2WZsFFDBcVOQ" base_Element="_F_GBEZPAEd2WZsFFDBcVOQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_F_88sJPAEd2WZsFFDBcVOQ" base_Usage="_F_kiMZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_F_88sZPAEd2WZsFFDBcVOQ" base_Element="_F_kiMZPAEd2WZsFFDBcVOQ"/>
+  <Omondo_1:Omondo__Access xmi:id="_GAbd0JPAEd2WZsFFDBcVOQ" base_Usage="_F_88spPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GAbd0ZPAEd2WZsFFDBcVOQ" base_Element="_F_88spPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GA5-8JPAEd2WZsFFDBcVOQ" base_Element="_GAbd0pPAEd2WZsFFDBcVOQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_GBSZcJPAEd2WZsFFDBcVOQ" base_Usage="_GA5-8ZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GBSZcZPAEd2WZsFFDBcVOQ" base_Element="_GA5-8ZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GBw6kJPAEd2WZsFFDBcVOQ" base_Element="_GBSZcpPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GChvkJPAEd2WZsFFDBcVOQ" base_Element="_GBw6kZPAEd2WZsFFDBcVOQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_GDA3wJPAEd2WZsFFDBcVOQ" base_Usage="_GChvkZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GDA3wZPAEd2WZsFFDBcVOQ" base_Element="_GChvkZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GDZSQJPAEd2WZsFFDBcVOQ" base_Element="_GDA3wpPAEd2WZsFFDBcVOQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_GD3zYJPAEd2WZsFFDBcVOQ" base_Usage="_GDZSQZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GD3zYZPAEd2WZsFFDBcVOQ" base_Element="_GDZSQZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GEQN4JPAEd2WZsFFDBcVOQ" base_Element="_GD3zYpPAEd2WZsFFDBcVOQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_GEuvAJPAEd2WZsFFDBcVOQ" base_Usage="_GEQN4ZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GEuvAZPAEd2WZsFFDBcVOQ" base_Element="_GEQN4ZPAEd2WZsFFDBcVOQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_GFHJgJPAEd2WZsFFDBcVOQ" base_Usage="_GEuvApPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GFHJgZPAEd2WZsFFDBcVOQ" base_Element="_GEuvApPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GFlqoJPAEd2WZsFFDBcVOQ" base_Element="_GFHJgpPAEd2WZsFFDBcVOQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_GGELwJPAEd2WZsFFDBcVOQ" base_Usage="_GFlqoZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GGELwZPAEd2WZsFFDBcVOQ" base_Element="_GFlqoZPAEd2WZsFFDBcVOQ"/>
+  <Omondo_1:Omondo__Access xmi:id="_GGis4JPAEd2WZsFFDBcVOQ" base_Usage="_GGELwpPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GGis4ZPAEd2WZsFFDBcVOQ" base_Element="_GGELwpPAEd2WZsFFDBcVOQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_GHNbQJPAEd2WZsFFDBcVOQ" base_Usage="_GGis4pPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GHNbQZPAEd2WZsFFDBcVOQ" base_Element="_GGis4pPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GHl1wJPAEd2WZsFFDBcVOQ" base_Element="_GHNbQpPAEd2WZsFFDBcVOQ"/>
+  <Omondo_1:Omondo__Access xmi:id="_GIEW4JPAEd2WZsFFDBcVOQ" base_Usage="_GHl1wZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GIEW4ZPAEd2WZsFFDBcVOQ" base_Element="_GHl1wZPAEd2WZsFFDBcVOQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_GIcxYJPAEd2WZsFFDBcVOQ" base_Usage="_GIEW4pPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GIcxYZPAEd2WZsFFDBcVOQ" base_Element="_GIEW4pPAEd2WZsFFDBcVOQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_GI7SgJPAEd2WZsFFDBcVOQ" base_Usage="_GIcxYpPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GI7SgZPAEd2WZsFFDBcVOQ" base_Element="_GIcxYpPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GKdjkJPAEd2WZsFFDBcVOQ" base_Element="_GKFJEpPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GK8EsJPAEd2WZsFFDBcVOQ" base_Element="_GKdjkZPAEd2WZsFFDBcVOQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_GLUfMJPAEd2WZsFFDBcVOQ" base_Usage="_GK8EsZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GLUfMZPAEd2WZsFFDBcVOQ" base_Element="_GK8EsZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GL_NkJPAEd2WZsFFDBcVOQ" base_Element="_GLUfMpPAEd2WZsFFDBcVOQ"/>
+  <Omondo_1:Omondo__Access xmi:id="_GMdusJPAEd2WZsFFDBcVOQ" base_Usage="_GL_NkZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GMdusZPAEd2WZsFFDBcVOQ" base_Element="_GL_NkZPAEd2WZsFFDBcVOQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_GM2JMJPAEd2WZsFFDBcVOQ" base_Usage="_GMduspPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GM2JMZPAEd2WZsFFDBcVOQ" base_Element="_GMduspPAEd2WZsFFDBcVOQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_GNUqUJPAEd2WZsFFDBcVOQ" base_Usage="_GM2JMpPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GNUqUZPAEd2WZsFFDBcVOQ" base_Element="_GM2JMpPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GN5SEJPAEd2WZsFFDBcVOQ" base_Element="_GNg3kJPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GOXzMJPAEd2WZsFFDBcVOQ" base_Element="_GN5SEZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GPIoMJPAEd2WZsFFDBcVOQ" base_Element="_GOXzMZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GPhCsJPAEd2WZsFFDBcVOQ" base_Element="_GPIoMZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GP_j0JPAEd2WZsFFDBcVOQ" base_Element="_GPhCsZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GQYlYJPAEd2WZsFFDBcVOQ" base_Element="_GP_j0ZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GRDTwJPAEd2WZsFFDBcVOQ" base_Element="_GQYlYZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GRh04JPAEd2WZsFFDBcVOQ" base_Element="_GRDTwZPAEd2WZsFFDBcVOQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_GSYwgJPAEd2WZsFFDBcVOQ" base_Usage="_GR6PYZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GSYwgZPAEd2WZsFFDBcVOQ" base_Element="_GR6PYZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GSxLAJPAEd2WZsFFDBcVOQ" base_Element="_GSYwgpPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GTPsIJPAEd2WZsFFDBcVOQ" base_Element="_GSxLAZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_GToGoJPAEd2WZsFFDBcVOQ" base_Element="_GTPsIZPAEd2WZsFFDBcVOQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_HMjSsJPAEd2WZsFFDBcVOQ" base_Usage="_HMExkJPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_HMjSsZPAEd2WZsFFDBcVOQ" base_Element="_HMExkJPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_Qj740JPAEd2WZsFFDBcVOQ" base_Element="_QjjeUJPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_QkaZ8JPAEd2WZsFFDBcVOQ" base_Element="_Qj740ZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_QmIRMJPAEd2WZsFFDBcVOQ" base_Element="_Qlv2spPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_QmmyUJPAEd2WZsFFDBcVOQ" base_Element="_QmIRMZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_Qm_M0JPAEd2WZsFFDBcVOQ" base_Element="_QmmyUZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_Qn82IJPAEd2WZsFFDBcVOQ" base_Element="_QneVApPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_QpSS4JPAEd2WZsFFDBcVOQ" base_Element="_QozxwpPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_QqDH4JPAEd2WZsFFDBcVOQ" base_Element="_QpSS4ZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_QrYkoJPAEd2WZsFFDBcVOQ" base_Element="_QrAKIZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_QwWkMJPAEd2WZsFFDBcVOQ" base_Element="_Qv4DEJPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_Qwu-sJPAEd2WZsFFDBcVOQ" base_Element="_QwWkMZPAEd2WZsFFDBcVOQ"/>
+  <Omondo_1:Omondo__Access xmi:id="_QxNf0JPAEd2WZsFFDBcVOQ" base_Usage="_Qwu-sZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_QxNf0ZPAEd2WZsFFDBcVOQ" base_Element="_Qwu-sZPAEd2WZsFFDBcVOQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_Qxl6UJPAEd2WZsFFDBcVOQ" base_Usage="_QxNf0pPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_Qxl6UZPAEd2WZsFFDBcVOQ" base_Element="_QxNf0pPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_QyKiEJPAEd2WZsFFDBcVOQ" base_Element="_Qxl6UpPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_Qyi8kJPAEd2WZsFFDBcVOQ" base_Element="_QyKiEZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_QzBdsJPAEd2WZsFFDBcVOQ" base_Element="_Qyi8kZPAEd2WZsFFDBcVOQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_QzySsJPAEd2WZsFFDBcVOQ" base_Usage="_QzBdsZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_QzySsZPAEd2WZsFFDBcVOQ" base_Element="_QzBdsZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_Q0Qz0JPAEd2WZsFFDBcVOQ" base_Element="_QzySspPAEd2WZsFFDBcVOQ"/>
+  <Omondo_1:Omondo__Access xmi:id="_Q0pOUJPAEd2WZsFFDBcVOQ" base_Usage="_Q0Qz0ZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_Q0pOUZPAEd2WZsFFDBcVOQ" base_Element="_Q0Qz0ZPAEd2WZsFFDBcVOQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_Q1aqYJPAEd2WZsFFDBcVOQ" base_Usage="_Q0pOUpPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_Q1aqYZPAEd2WZsFFDBcVOQ" base_Element="_Q0pOUpPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_Q1zE4JPAEd2WZsFFDBcVOQ" base_Element="_Q1aqYpPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_Q2RmAJPAEd2WZsFFDBcVOQ" base_Element="_Q1zE4ZPAEd2WZsFFDBcVOQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_Q2qAgJPAEd2WZsFFDBcVOQ" base_Usage="_Q2RmAZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_Q2qAgZPAEd2WZsFFDBcVOQ" base_Element="_Q2RmAZPAEd2WZsFFDBcVOQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_Q3IhoJPAEd2WZsFFDBcVOQ" base_Usage="_Q2qAgpPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_Q3IhoZPAEd2WZsFFDBcVOQ" base_Element="_Q2qAgpPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_Q3nCwJPAEd2WZsFFDBcVOQ" base_Element="_Q3IhopPAEd2WZsFFDBcVOQ"/>
+  <Omondo_1:Omondo__Access xmi:id="_Q3_dQJPAEd2WZsFFDBcVOQ" base_Usage="_Q3nCwZPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_Q3_dQZPAEd2WZsFFDBcVOQ" base_Element="_Q3nCwZPAEd2WZsFFDBcVOQ"/>
+  <Omondo_1:Omondo__Import xmi:id="_Q48fgJPAEd2WZsFFDBcVOQ" base_Usage="_Q3_dQpPAEd2WZsFFDBcVOQ"/>
+  <JavaProfile_1:JavaProfile__AutoDetected xmi:id="_Q48fgZPAEd2WZsFFDBcVOQ" base_Element="_Q3_dQpPAEd2WZsFFDBcVOQ"/>
+</xmi:XMI>
